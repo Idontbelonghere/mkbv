@@ -5,9 +5,8 @@
 <head>
     <title>Wukong & BugViewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="css/main2.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,53 +20,58 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Brand</a>
+                    <a class="navbar-brand" href="#">Kris</a>
                 </div>
-
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link</a>
+                        <li class=""><a href="#nav-wukong">About Wukong</a>
                         </li>
-                        <li><a href="#">Link</a>
+                        <li><a href="#nav-team">About Team</a>
+                        </li>
+                        <li><a href="#nav-leader">About Leader</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </div>
-
     <!-- CONTAINER -->
-    <div class="container">
+    <div class="container ">
         <h1><a href="#">Wukong & BugViewer</a>
         </h1>
         <h3>Static Analysis & GUI</h3>
         <!-- Indicators -->
         <div id="treasures" class="carousel slide" data-ride="carousel">
-            
             <ol class="carousel-indicators">
                 <li data-target="#treasures" data-slide-to="0" class="active"></li>
                 <li data-target="#treasures" data-slide-to="1"></li>
                 <li data-target="#treasures" data-slide-to="2"></li>
+                <li data-target="#treasures" data-slide-to="3"></li>
             </ol>
-            <!-- Wrapper for slides 这里添加关于自己喜爱东西的图片展示 -->
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="img/bg1.jpg" alt="...">
+                    <img src="img/p1.png" alt="...">
                     <div class="carousel-caption">
-                        description1
+                        homepage - project overview
                     </div>
                 </div>
                 <div class="item">
-                    <img src="img/bg2.jpg" alt="...">
+                    <img src="img/p2.png" alt="...">
                     <div class="carousel-caption">
-                        description2
+                        options
                     </div>
                 </div>
                 <div class="item">
-                    <img src="img/bg3.jpg" alt="...">
+                    <img src="img/p3.png" alt="...">
                     <div class="carousel-caption">
-                        description3
+                        buglist of the file
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/p4.png" alt="...">
+                    <div class="carousel-caption">
+                        bug details
                     </div>
                 </div>
             </div>
@@ -81,27 +85,118 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div>
-            
+        <div id="nav-wukong">
+            <h2>About Wukong</h2>
+            <div class="desc">静态分析检测工具</div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="infoHeader">
+                        <p>针对错误</p>
+                    </div>
+                    <div class="infoContent">
+                        <p>主要针对的错误是C/C++程序中常见的内存访问错误，包括缓冲区溢出 （buffer overflow)，内存泄漏 （memory leak)， 内存释放后引用 （use-after-free)，未初始化变量和缓冲区 （uninitialized memory)等。</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="infoHeader">
+                        <p>我们的优势</p>
+                    </div>
+                    <div class="infoContent">
+                        <p>我们研究了一个全新的方法，可以精确检测出涉及复杂指针操作的深层次的内存访问错误。wukong可以有效检测出大量目前的先进静态分析检错工具无法检测出的深层次内存访问错误，其误报率也低于当前大部分的静态分析检错工具。</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <div id="nav-team">
+            <h2>About Team</h2>
+            <div class="desc"></div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div id="teamPic"></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p class="teamInfo">我们团队隶属于中科院计算所国家重点实验室下面，我们的研究方向是程序分析方向，目标是研究出先进的程序分析技术并开发出有重大实际价值的开发工具来提高开发，测试，调试的效率。目前我们开发的工具包括先进的静态分析检错工具，以及针对分布式系统的辅助调试工具等。</p>
+                </div>
+            </div>
+        </div>
+        <div id="nav-leader">
+            <h2>About Leader</h2>
+            <div class="desc"></div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                <div id="bossPic"></div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2"></div>
+            </div>
+            <div id="bossName" class="desc">李练</div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <p class="infoHeader txtCenter">Summary</p>
+                    <p>本科1998年毕业于清华大学工程物理系，
+                        <br>自2003年起在澳大利亚新南威尔士大学计算机科学与工程系攻读博士，于2007年获得博士学位。
+                        <br> 2008年至2015年任职于甲骨文公司澳大利亚实验室(原升阳公司实验室），担任主管研究员 (principal member of technical staff)。
+                        <br>2015年回国任中科院计算所百人计划研究员。
+                        <br> 多年以来一直从事程序设计语言相关方面的系统研究， 在针对嵌入式系统的编译技术、系统可靠性和安全性分析以及并行技术等方面都做出了先进的成果。
+                        <br>近年来先后在ACM/IEEE Trans.等国际权威期刊和会议发表论文20 篇，其中以第1 作者发表的论文11 篇， 单篇最高他引105 次（谷歌学术搜索）。
+                        <br>其研究成果多已开发出原型系统并应用到相关领域中， 包括自动管理嵌入式系统高速暂存存储器的编译系统、 针对大型系统程序的静态分析查错软件。
+                        <br>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <p class="infoHeader txtCenter">申请专利</p>
+                    <p> Lian Li, Cristina Cifuentes and Nathan Keynes: System and Method for Overow Detection using Symbolic Analysis (Granted in 2011)
+                        <br> Lian Li, Cristina Cifuentes and Nathan Keynes: Pointer Analysis as Value Flow (Granted in 2013)
+                        <br> Lian Li, Cristina Cifuentes and Nathan Keynes: A Context-sensitive Analysis Framework using Value Flows (Filed in May, 2011)
+                        <br> Nathan Keynes, Cristina Cifuentes and Lian Li: Method for Performing Fast Backwards-driven Path-sensitive Data-flow Analysis (Filed in Jul, 2011)
+                        <br> Lian Li and Cristina Cifuentes: A Practical Inter-procedural Path-sensitive Analysis Framework for Bug Checking (To be filed)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="infoHeader txtCenter">发表论文</div>
+                <div class="col-lg-12 col-md-12 col-sm-12" id="paper">
+                    <p><strong>程序分析和查错</strong>
+                        <br> 1.Lian Li, Cristina Cifuentes and Nathan Keyes: Precise and Scalable Context-sensitive Pointer Analysis via Value Flow Graph in 2013 ACM Sigplan International Symposium on Memory Management (ISMM’13)
+                        <br> 2. Lian Li, Cristina Cifuentes and Nathan Keynes: Boosting the Performance of Flow-sensitive Pointer Analysis using Value Flow in 2011 ACM SIGSOFT Symposium on the Foundations of Software Engineering (FSE'11)
+                        <br> 3.Lian Li, Cristina Cifuentes, and Nathan Keynes: Practical and Effective Symbolic Analysis for Buffer Overow Detection in 2010 ACM SIGSOFT Symposium on the Foundations of Software Engineering (FSE'10)
+                        <br> 4.Kirsten Winter, Chenyi Zhang, Ian Hayes, Nathan Keynes, Cristina Cifuentes and Lian Li. Path-Sensitive Data Flow Analysis Simplified in 15 th International Conference on Formal Engineering Methods (ICFEM’13)
+                        <br> 5.Cristina Cifuentes, Nathan Keynes, Lian Li, Nathan Hawes and Manuel Valdivezo Basauri: Through the Looking Glass: Transitioning Parfait into a Development Tool in IEEE Security & Privacy Journal 10(3), 2012
+                        <br> 6.Cristina Cifuentes, Nathan Keynes, Lian Li et al.: Static Deep Error Checking in Large System Applications using Parfait in 2011 ACM SIGSOFT Symposium on the Foundations of Software Engineering (Tool Demo, FSE'11)
+                        <br> 7.Cristina Cifuentes, Nathan Keynes, Lian Li and Bernhard Scholz: Program Analysis for Bug Detection using Parfait in 2009 Workshop on Partial Evaluation and Semantic-Based Program Manipulation (Invited Talk, PEPM'09)
+                        <br> 8.Cristina Cifuentes, Christiann Hoermann, Nathan Keynes, Lian Li et al.: BegBunch: Benchmarking for C Bug Detection Tools in 2009 Workshop on Defects in Large Software Systems(Defects'09)</p>
+                    <p><strong>嵌入式系统的高速暂存存储器(Scratchpad)管理</strong>
+                        <br> 1. Lian Li, Jingling Xue and Jens Knoop: Scratchpad Memory Allocation for Data Aggregates via Interval Coloring in Superperfect Graphs in ACM Transaction on Embedded Computing Systems (TECS) 10(2), 2010
+                        <br> 2. Lian Li, Hui Feng and Jingling Xue: Compiler-directed Scratchpad Memory Management via Graph Coloring in ACM Transaction on Architecture and Code Optimisation (TACO) 6(3), 2009
+                        <br> 3. Lian Li, Hui Wu and Jingling Xue: Towards Data Tiling for Whole Programs in Scratchpad Memory Allocation in 2007 Asia-Pacfic Computer Systems Architecture Conference (ACSAC'07)
+                        <br> 4.Lian Li, Quan Hoang Nguyen and Jingling Xue: Scratchpad Allocation for Data Aggregates in Superperfect Graphs in 2007 ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES'07)
+                        <br> 5.Lian Li, Lin Gao and Jingling Xue: Memory Coloring: A Compiler Approach for Scratchpad Memory Management in 2005 International Conference on Parallel Architecture and Compilation Techniques (PACT'05)</p>
+                    <p><strong>嵌入式系统低能耗计算</strong>
+                        <br> 1. Lian Li and Jingling Xue: Trace-based leakage energy optimisations at link time in Journal of Systems Architecture 53(1), 2007
+                        <br> 2. Lian Li and Jingling Xue: Trace-Based Data Cache Leakage Reduction at Link Time in 2006 Asia-Paci_c Computer Systems Architecture Conference (ACSAC'06)
+                        <br> 3. Lian Li and Jingling Xue: A trace-based binary compilation framework for energy-aware computing in 2004 ACM SIGPLAN/SIGBED Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES'04)</p>
+                    <p><strong>投机并行技术</strong>
+                        <br> 1. Lin Gao, Lian Li, Jingling Xue and Pen-Chung Yew: SEED: A Statically-Greedy and Dynamically-Adaptive Approach for Speculative Loop Execution in IEEE Transaction on Computers (TC) 2012
+                        <br> 2. Lin Gao, Lian Li, Jingling Xue and Tin-Fook Ngai: Exploiting Speculative TLP in Recursive Pro-grams by Dynamic Thread Prediction in 2009 International Conference on Compiler Construction (CC'09)
+                        <br> 3. Lin Gao, Quan Hoang Nguyen, Lian Li, Jingling Xue and Tin-Fook Ngai: Thread-Sensitive Modulo Scheduling for Multi-core Processors in 2008 International Conference on Parallel Processing (ICPP'08)
+                        <br> 4. Lin Gao, Lian Li, Jingling Xue and Tin-Fook Ngai: Loop recreation for thread-level speculation in 2007 International Conference on Parallel and Distributed Systems (ICPADS'07)</p>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <footer>
+        <hr>
+        <p>©2016 Kris</p>
+        <p>Feedback : <a href="mailto:weaponx47@qq.com">weaponx47@qq.com</a>.</p>
+    </footer>
     <div id="background"></div>
-    
-    <!-- js goes here -->
+
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <!-- 这个stickUp插件真jb难用，先特么放着。
-    <script src="js/stickUp.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript">
     jQuery(function($) {
-      $(document).ready(function() {
-        $('.navTop').stickUp();
-      });
+
     });
     </script>
-    -->
 </body>
 
 </html>
